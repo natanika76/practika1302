@@ -1,29 +1,19 @@
-import './App.css';
+import React from 'react';
+import murom from './img/murom.jpg'
+import Bio from './components/Bio'
+import Knopki from './components/Knopki'
 
-function App() {
+class App extends React.Component {
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src="Octocat.png" className="App-logo" alt="logo" />
-        <p>
-          GitHub Codespaces <span className="heart">♥️</span> React
-        </p>
-        <p className="small">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </p>
-      </header>
+      <h2>Великий человек</h2>
+      <img src={murom} alt="murom" width="200"/>
+      <Bio />
+      <Knopki />
     </div>
-  );
+  )
+}
 }
 
 export default App;
